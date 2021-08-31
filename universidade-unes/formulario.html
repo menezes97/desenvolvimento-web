@@ -1,0 +1,73 @@
+<!--formulários-->
+		<!--os componentes do formulário-->
+		<!--ele é utilizado para que você consiga capturar dados do usuário-->
+		<!-- tag <input> o usuario consegue digitar um texto dentro do site-->
+		<!--atributo type="definimos o tipo de dado capturado"-->
+		<!--atributo name é uma forma de recurar os dados digitados
+			utilizando uma linguagem de programação-->
+			<!--atributo type"button" value="define o texto para o botão"-->
+			<!--type="submit" siginifica enviar formulário-->
+			<!--fazemos o processamento do formulário utilizando
+				uma linguagem de programação-->
+			<!--atributo action="processa.php" poderia enviar para essa página e assim capturar os dados-->
+			<!--via formulário conseguimos definir para onde queremos enviar os dados com o atributo action-->
+			<!--colocamos o mesmo name="sexo" para selecionar ou um ou outro-->
+			<!--diferenciamos na hora de saber qual foi selecionado pelo usuário, com o value=""-->
+			<!--type='radio' usado, por exemplo, para escolher entre masculino e feminino -->
+			<!--usaremos o atributo checkbox para que o usuário possa escolher mais de uma opção-->
+			<!--tag <select></select> permite que o usuário escolhe em uma lista somente uma opção-->
+			<!--é mais usado quando se tem muitas opções-->
+			<!--todos os dados capturados serão tratados pela linguagem de programação php-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulários</title>
+</head>
+	<body>
+		<h2>Login</h2>
+		<form><!--<form action="processa.php">-->
+			
+			Login:<br>
+			<input type="text" name="login"><br>
+			Senha:<br>
+			<input type="password" name="senha"><br><br>
+			<input type="submit" value="Logar">
+
+		</form>
+		<form>
+			<h2>Cadastre-se</h2>
+			Login:<br>
+			<input type="text" name="login"><br><br>
+			Sexo:<br>
+			<input type="radio" name="sexo" value="M"> Masculino<br>
+			<input type="radio" name="sexo" value="F"> Feminino<br><br>
+
+			Interesses:<br>
+			<input type="checkbox" name="interesses"> Futebol<br>
+			<input type="checkbox" name="interesses"> Cursos<br>
+
+			Estado: <br>
+			<select name="estado">
+				<option value="sp">SP</option>
+				<option value="rj">RJ</option>
+				<option value="mg">MG</option>
+			</select><br><br>
+			<!--com o atributo name="" e value="" utilizando uma linguagem de programação, conseguimos capturar a escolha do usuário-->
+
+			Observações: <br>
+			<textarea></textarea><!--caixa de texto maior--><br>
+
+			<input type="submit" value="Cadastrar"><br>
+		</form>
+		
+		<!--Entidades html-->
+		<h2>Utilizando caracteres especiais</h2>
+		&lt;p&gt;
+		<br>
+		home &nbsp;-&nbsp; quem somos &nbsp;-&nbsp; contato
+
+
+
+	</body>
+</html>
